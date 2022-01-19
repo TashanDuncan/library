@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+    <title>Library</title>
+  </head>
+  <body>
+    <h1>Welcome to the Library</h1>
+    <h2>Books</h2>
+    <div class="books" data-books></div>
+    <button data-button-add>+ New Book</button>
+    <div id="popUp">
+      <form id="form"  method="get">
+        <span class="close">&times;</span>
+        <ledgend>New Book</ledgend>
+        <div id="textInput">
+          <p>
+            <input type="text" name="title" placeholder="Title" />
+          </p>
+          <p>
+            <input type="text" name="author" placeholder="Author" />
+          </p>
+          <p>
+            <input type="text"  name="pages" placeholder="Pages" />
+          </p>
+        </div>
+        <div id="checkBox">
+          <p>
+            <label>Read: </label
+            ><input type="checkbox" name="read" />
+          </p>
+        </div>
+        <button type="submit" form="form" id="submit">Add</button>
+      </form>
+    </div>
+  </body>
+</html>
